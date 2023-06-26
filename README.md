@@ -1,26 +1,26 @@
 # stock-price-prediction
 
-## Executive Summary
+## 🔖 Executive Summary
 This project aims at creating a machine learning model that predicts the price of a stock for every 15 minute time intervals. Stock prices of Google, Apple, Meta, Netflix, Amazon, Ebay have been collected from Yahoo finance. Variables high, low, close, open and volume have been collected for every 15 minute intervals from December 14th and March 13th. This complete data has been used for training, hyper-tuning and validation. Finally, the selected model has been tested on the data from March 14th to March 23rd. Based on our analysis we found that different stocks move differently in the market. We also learned that each stock’s close depends on a different set of features. 
 Some of the more volatile stocks depend on more lag values as well as volume information whereas the less volatile stocks depend mostly on the previous lag variables. The main observation was that we saw a strong linear correlation between lag values and close price and hence the final model we chose was a lasso linear regression model. Below are the statistics for this model.
 <img width="378" align="center" alt="Screenshot 2023-06-25 at 10 36 57 PM" src="https://github.com/Aish26/stock-price-prediction/assets/27972590/c7cb13b5-b9e4-4873-b5e2-af245a794be3">
 
-## Programming language and libraries
+## 🛠️ Programming language and libraries
 - Python
 - sklearn
 - statsmodel
 - tensorflow 
 
-## Models 
+## 📊 Models 
 - Linear regression
 - Lasso regression
 - Random forest
 - Neural network to build a stock price prediction model. 
 
-## Background
+## 🌃 Background
 Stock market trading can be an exciting and potentially lucrative endeavour, but it can also be a challenging one for those who are new to it. Our project attempts to make this feat easier for people just starting their trading journey. Traditionally, stock trading analysis is seen as a time series forecasting model, but we are looking at it in a different light. We are using machine learning prediction techniques to identify the important features that need to be considered before trading stocks. 
 
-## Exploratory Data Analysis (EDA):
+## 🗺️ Exploratory Data Analysis (EDA):
 The EDA was performed on the training dataset to identify anomalies or outliers, understanding the data and determine the relationships between the variables. Every stock’s close price is strongly and linearly related to the previous lag terms of the closing and opening prices as illustrated below:
 
 <img width="700" alt="Screenshot 2023-06-25 at 10 39 54 PM" src="https://github.com/Aish26/stock-price-prediction/assets/27972590/6b2074fa-105d-41e0-af95-69d00a09452d">
@@ -46,7 +46,7 @@ Final Model Actual vs Prediction:
 <img width="597" alt="Screenshot 2023-06-25 at 10 50 38 PM" src="https://github.com/Aish26/stock-price-prediction/assets/27972590/233c9440-684a-4909-a97b-9cbdbdaf4f17">
 
 
-## Recommendations and Business Value
+## 💰 Recommendations and Business Value
 - To buy or not to buy? : Using our statistical models you will be able to predict the price of the stock in the next time window. This will tell you how you should trade in the next time period - if you should buy, sell or do nothing.
 - What’s trending : If a stock is trending upwards during the day, it may indicate positive intraday market sentiment and investor confidence in the stock. Conversely, if a stock is trending downwards during the day, it may indicate negative intraday market sentiment and investor uncertainty.
 - Uncalculated Risk, No Reward : If a stock has been trending downwards during the day and has established a resistance level, traders can use this level as a stop loss to limit their potential losses if the stock starts to rise. 
