@@ -3,6 +3,7 @@
 ## 🔖 Executive Summary
 This project aims at creating a machine learning model that predicts the price of a stock for every 15 minute time intervals. Stock prices of Google, Apple, Meta, Netflix, Amazon, Ebay have been collected from Yahoo finance. Variables high, low, close, open and volume have been collected for every 15 minute intervals from December 14th and March 13th. This complete data has been used for training, hyper-tuning and validation. Finally, the selected model has been tested on the data from March 14th to March 23rd. Based on our analysis we found that different stocks move differently in the market. We also learned that each stock’s close depends on a different set of features. 
 Some of the more volatile stocks depend on more lag values as well as volume information whereas the less volatile stocks depend mostly on the previous lag variables. The main observation was that we saw a strong linear correlation between lag values and close price and hence the final model we chose was a lasso linear regression model. Below are the statistics for this model.
+
 <img width="378" align="center" alt="Screenshot 2023-06-25 at 10 36 57 PM" src="https://github.com/Aish26/stock-price-prediction/assets/27972590/c7cb13b5-b9e4-4873-b5e2-af245a794be3">
 
 ## 🛠️ Programming language and libraries
